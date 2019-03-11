@@ -40,7 +40,7 @@ export default class GalleryView extends Component {
                 <div className="header">
                     <h1> MovieFlix</h1>
                     <div className="options">
-                        <a className="option-button" to={process.env.PUBLIC_URL + "/"}>Search View</a>
+                        <Link className="option-button" to={process.env.PUBLIC_URL + "/"}>Search View</Link>
                         <NavDropdown className="option-button" title="Genres" id="basic-nav-dropdown">
                             {genres.map((genre, i) => {
                                 return <NavDropdown.Item 
