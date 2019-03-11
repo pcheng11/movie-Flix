@@ -8,9 +8,9 @@ import GalleryView from '../Gallery/GalleryView.jsx'
 class App extends React.Component {
     render() {
         return (
-            <BrowserRouter basename={process.env.PUBLIC_URL}>
+            <BrowserRouter>
                 <Switch>
-                    <Route path= '/' component={Home} />
+                    <Route path= {process.env.PUBLIC_URL + '/'} component={Home} />
                     <Route path='/detail' component={Detail} />
                     <Route path='/gallery' component={GalleryView} />
                 </Switch>
