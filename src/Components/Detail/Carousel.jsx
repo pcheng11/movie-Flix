@@ -9,7 +9,6 @@ class RenderSlides extends React.Component {
         
         const slides = this.props.movies.map((movie, idx) => {
             return (
-                    // <Grid className="card" key={idx}>
                     <div className="detail">
                         <Image className="cardImg" src={'http://image.tmdb.org/t/p/original' + movie.poster_path} />
                         <div className="info">

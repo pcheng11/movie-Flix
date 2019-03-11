@@ -33,13 +33,13 @@ export default class GalleryView extends Component {
     }
 
     render() {
-        const { genres, activeItem, filteredMovies } = this.state;
+        const { genres, filteredMovies } = this.state;
         return (
             <div>
                 <div className="header">
                     <h1> MovieFlix</h1>
                     <div className="options">
-                        <a className="option-button from-left" href="/">Search View</a>
+                        <a className="option-button from-left" href={process.env.PUBLIC_URL + "/"}>Search View</a>
                         <NavDropdown className="option-button" title="Genres" id="basic-nav-dropdown">
                             {genres.map((genre, i) => {
                                 return <NavDropdown.Item 

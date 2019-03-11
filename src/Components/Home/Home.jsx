@@ -44,7 +44,7 @@ class Home extends React.Component {
                 <div className="header">
                         <h1> MovieFlix</h1>
                         <div className="options">
-                            <a className="option-button" href="/gallery">Gallery View</a>
+                            <a className="option-button" href={process.env.PUBLIC_URL + "/gallery"}>Gallery View</a>
                         </div>
                 </div>
                 <div className="main">
