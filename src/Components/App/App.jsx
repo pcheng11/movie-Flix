@@ -8,13 +8,13 @@ let hashHistory = Router.hashHistory;
 class App extends React.Component {
     render() {
         return (
-            <BrowserRouter history={history} basename={process.env.PUBLIC_URL}>
+            <Router basename={process.env.PUBLIC_URL}>
                 <Switch>
                     <Route exact path="/" component={Home} />
                     <Route exact path='/detail' component={Detail} />
                     <Route exact path='/gallery' component={GalleryView} />
                 </Switch>
-            </BrowserRouter>
+            </Router>
         );
     }
 }
