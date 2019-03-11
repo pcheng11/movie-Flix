@@ -1,7 +1,8 @@
 import React from 'react';
-import { Item, Grid, Image, Segment } from 'semantic-ui-react';
+import { Image } from 'semantic-ui-react';
 import Carousel from 'nuka-carousel';
 import './Detail.scss';
+import PropTypes from 'prop-types';
 
 class RenderSlides extends React.Component {
 
@@ -9,7 +10,7 @@ class RenderSlides extends React.Component {
         
         const slides = this.props.movies.map((movie, idx) => {
             return (
-                    <div className="detail">
+                    <div className="detail" key={idx}>
                         <Image className="cardImg" src={'http://image.tmdb.org/t/p/original' + movie.poster_path} />
                         <div className="info">
                             <b> {movie.title} </b>
@@ -30,4 +31,9 @@ class RenderSlides extends React.Component {
         );
     }
 };
+
+RenderSlides.propTypes = {
+    movies: PropTypes.array
+}
+
 export default RenderSlides;

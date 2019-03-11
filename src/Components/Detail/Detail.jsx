@@ -1,8 +1,9 @@
 import React from 'react';
 import RenderSlides from './Carousel.jsx';
 import './Detail.scss';
-import '../Gallery/GalleryMovies.scss'
-import { Link } from 'react-router-dom'
+import '../Gallery/GalleryMovies.scss';
+import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 class Detail extends React.Component {
     state = { index: 0, movies: []};
@@ -36,4 +37,10 @@ class Detail extends React.Component {
         );
     }
 }
+
+Detail.propTypes = {
+    movies: PropTypes.array,
+    curId: PropTypes.number
+}
+
 export default Detail;

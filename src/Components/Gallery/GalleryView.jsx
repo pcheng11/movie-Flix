@@ -4,11 +4,11 @@ import GalleryMovies from './GalleryMovies.jsx'
 import './GalleryMovies.scss'
 import { Dropdown } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
- 
+
 export default class GalleryView extends Component {
     state = { genre_options: [], filteredMovies: [] }
 
-    componentWillMount() {
+    componentDidMount() {
         tmdb.get('/genre/movie/list', {
             params: {
                 api_key: 'd2e837497270b113fdd2b34bbd1d124c',
@@ -37,7 +37,6 @@ export default class GalleryView extends Component {
 
     render() {
         const { genre_options, filteredMovies } = this.state;
-        console.log(genre_options);
         return (
             <div>
                 <div className="header">

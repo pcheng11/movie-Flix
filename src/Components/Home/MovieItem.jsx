@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Grid, Image } from 'semantic-ui-react'
 import './MovieItem.scss';
+import PropTypes from 'prop-types';
 
 const MovieItem = ({ movie, movies }) => {
     return (
@@ -20,4 +21,10 @@ const MovieItem = ({ movie, movies }) => {
     );
 
 };
+
+MovieItem.propTypes = {
+    movie: PropTypes.object,
+    movies: PropTypes.array
+}
+
 export default MovieItem;
