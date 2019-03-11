@@ -3,7 +3,7 @@ import { Input, Dropdown } from 'semantic-ui-react'
 import MovieList from './MovieList.jsx';
 import tmdb from '../../api/tmdb.jsx'
 import './Home.scss'
-
+import { Link } from 'react-router-dom'
 class Home extends React.Component {
 
     constructor() {
@@ -44,7 +44,7 @@ class Home extends React.Component {
                 <div className="header">
                         <h1> MovieFlix</h1>
                         <div className="options">
-                            <a className="option-button" href={'/gallery'}>Gallery View</a>
+                            <Link className="option-button" to={process.env.PUBLIC_URL + '/gallery'}>Gallery View</Link>
                         </div>
                 </div>
                 <div className="main">
