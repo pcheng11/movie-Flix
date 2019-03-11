@@ -10,9 +10,9 @@ class App extends React.Component {
         return (
             <Router basename={process.env.PUBLIC_URL}>
                 <Switch>
-                    <Route exact path="/" component={Home} />
-                    <Route exact path='/detail' component={Detail} />
-                    <Route exact path='/gallery' component={GalleryView} />
+                    <Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
+                    <Route exact path={process.env.PUBLIC_URL + '/detail'} component={Detail} />
+                    <Route exact path={process.env.PUBLIC_URL + '/gallery'} component={GalleryView} />
                 </Switch>
             </Router>
         );
