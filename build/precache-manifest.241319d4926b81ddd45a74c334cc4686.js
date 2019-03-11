@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/movie-Flix/static/js/runtime~main.7540e249.js"
   },
   {
-    "revision": "e5143e248ea8c6c16191",
-    "url": "/movie-Flix/static/js/main.83fcd918.chunk.js"
+    "revision": "cc687592589fad408629",
+    "url": "/movie-Flix/static/js/main.12b84ad7.chunk.js"
   },
   {
     "revision": "8f55838987897600f2c7",
     "url": "/movie-Flix/static/js/2.3ab38b3f.chunk.js"
   },
   {
-    "revision": "e5143e248ea8c6c16191",
+    "revision": "cc687592589fad408629",
     "url": "/movie-Flix/static/css/main.f9b3c37c.chunk.css"
   },
   {
-    "revision": "afc46d77d7eb9ceb84a2b93c2d63b37c",
+    "revision": "627f3b88c03b59e2c15c14e668e91aa8",
     "url": "/movie-Flix/index.html"
   }
 ];

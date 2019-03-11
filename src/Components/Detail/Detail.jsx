@@ -24,7 +24,7 @@ class Detail extends React.Component {
                 <div className="header">
                     <h1> MovieFlix </h1>
                     <div className="options">
-                        <a className="option-button" href="/search">Search View</a>
+                        <a className="option-button" href="/">Search View</a>
                         <a className="option-button" href="gallery">Gallery View</a>
                     </div>
                 </div>
