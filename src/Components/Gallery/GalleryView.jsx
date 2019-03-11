@@ -2,23 +2,25 @@ import React, { Component } from 'react'
 import tmdb from '../../api/tmdb.jsx'
 import GalleryMovies from './GalleryMovies.jsx'
 import './GalleryMovies.scss'
-import { NavDropdown } from 'react-bootstrap'
+import { Dropdown } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
  
 export default class GalleryView extends Component {
-    state = { genres: [], filteredMovies: [], activeItem: "Action"}
+    state = { genre_options: [], filteredMovies: [] }
 
-    componentDidMount() {
+    componentWillMount() {
         tmdb.get('/genre/movie/list', {
             params: {
                 api_key: 'd2e837497270b113fdd2b34bbd1d124c',
             }
         })
         .then(response => response.data)
-        .then(data => this.setState({ genres: data.genres }))
+        .then(data => this.setState({ genre_options: data.genres.map((genre) => { return { value: genre.id, text: genre.name}}) }))
+
+        this.filterMovies(28);
     }
 
-    filterMovies = (value, name) => {
+    filterMovies = (value) => {
         tmdb.get('/discover/movie', {
             params: {
                 api_key: 'd2e837497270b113fdd2b34bbd1d124c',
@@ -26,38 +28,33 @@ export default class GalleryView extends Component {
             }
         })
         .then(response => response.data)
-            .then(data => this.setState({ filteredMovies: data.results, activeItem: name }));
+        .then(data => this.setState({ filteredMovies: data.results }));
     }
 
-    handleItemClick = (value) => {
+    handleItemClick = (e, {value}) => {
         this.filterMovies(value);
     }
 
     render() {
-        const { genres, filteredMovies } = this.state;
+        const { genre_options, filteredMovies } = this.state;
+        console.log(genre_options);
         return (
             <div>
                 <div className="header">
                     <h1> MovieFlix</h1>
                     <div className="options">
                         <Link className="option-button" to={process.env.PUBLIC_URL + "/"}>Search View</Link>
-                        <NavDropdown className="option-button" title="Genres" id="basic-nav-dropdown">
-                            {genres.map((genre, i) => {
-                                return <NavDropdown.Item 
-                                            color="white" 
-                                            id="menubar-item" 
-                                            key={i} 
-                                            name={genre.name} 
-                                            eventKey={genre.id} 
-                                            onSelect={this.handleItemClick}>
-                                        {genre.name}
-                                        </NavDropdown.Item>
-                            })}
-                        </NavDropdown>
+                        <Dropdown 
+                            className="option-button"
+                            placeholder='Select Genre'
+                            onChange={this.handleItemClick}
+                            selection 
+                            options={genre_options}
+                            />
                     </div>
                 </div>
                 <div id="gallery-view">
-                        <GalleryMovies movies={filteredMovies} />
+                    <GalleryMovies movies={filteredMovies} />
                 </div>
             </div>
             
