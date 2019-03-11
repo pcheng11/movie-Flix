@@ -3,7 +3,8 @@ import tmdb from '../../api/tmdb.jsx'
 import GalleryMovies from './GalleryMovies.jsx'
 import './GalleryMovies.scss'
 import { NavDropdown } from 'react-bootstrap'
-
+import { Link } from 'react-router-dom'
+ 
 export default class GalleryView extends Component {
     state = { genres: [], filteredMovies: [], activeItem: "Action"}
 
