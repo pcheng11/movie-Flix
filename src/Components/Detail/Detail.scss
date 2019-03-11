@@ -1,0 +1,38 @@
+.slider-slide {
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    .cardImg {
+        width: 40%;
+        padding: 10px;
+        margin: 0 auto;
+    }
+    .info {
+        margin: 0 auto;
+        color: white;
+    }
+}
+.detailPage {
+    height: 100vh;
+}
+
+.detail {
+    z-index: -1;
+    height: 100%;
+}
+
+.slider {
+    position: absolute;
+    margin: 0 auto !important;
+    height: 100% !important;
+    width: 50% !important;
+    padding-top: 120px;
+}
+
+.slider-control-bottomcenter {
+    display: none;
+}
+
+.slide-visible {
+    height: 100% !important;
+}
