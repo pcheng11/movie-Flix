@@ -5,7 +5,7 @@ import './MovieItem.scss';
 
 const MovieItem = ({ movie, movies }) => {
     return (
-        <Link to={{ pathname: process.env.PUBLIC_URL + "/detail", state: { movies: movies, curId: movie.id } }}>
+        <Link to={{ pathname: "/detail", state: { movies: movies, curId: movie.id } }}>
         <Grid id="result-row">
             <Grid.Column mobile={10} tablet={4} computer={5}>
                 <Image id="result-image" src={'http://image.tmdb.org/t/p/original' + movie.poster_path} />
