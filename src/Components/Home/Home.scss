@@ -20,8 +20,24 @@
     padding: 2%;
     margin-bottom: 2%;
 }
+.radio-button {
+    .ui.radio.checkbox label {
+        color: white !important;
+    }
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between 
+}
+
 .search {
-    width: 80%;
-    z-index:6;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    z-index: 2
+}
+
+.search-bar {
+    width: 50vw;
     /* padding-top: 10%; */
 }
