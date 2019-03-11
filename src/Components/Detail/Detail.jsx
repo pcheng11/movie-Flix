@@ -2,6 +2,7 @@ import React from 'react';
 import RenderSlides from './Carousel.jsx';
 import './Detail.scss';
 import '../Gallery/GalleryMovies.scss'
+import { Link } from 'react-router-dom'
 
 class Detail extends React.Component {
     state = { index: 0, movies: []};

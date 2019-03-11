@@ -4,6 +4,7 @@ import MovieList from './MovieList.jsx';
 import tmdb from '../../api/tmdb.jsx'
 import './Home.scss'
 import { Link } from 'react-router-dom'
+
 class Home extends React.Component {
 
     constructor() {
