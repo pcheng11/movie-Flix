@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/movie-Flix/precache-manifest.84e978fba2ca66c3566101b254862ff9.js"
+  "/movie-Flix/precache-manifest.c05a11f26695e675cdb8659b16bffbe5.js"
 );
 
 workbox.clientsClaim();
