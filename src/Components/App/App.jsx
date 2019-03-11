@@ -11,7 +11,7 @@ class App extends React.Component {
             <BrowserRouter>
                 <Switch>
                     <Route path= {process.env.PUBLIC_URL + '/'} component={Home} />
-                    <Route exact path= {'/detail'} component={Detail} />
+                    <Route path= {'/detail'} component={Detail} />
                     <Route path= {process.env.PUBLIC_URL + '/gallery'} component={GalleryView} />
                 </Switch>
             </BrowserRouter>
