@@ -1,13 +1,13 @@
 {
-  "main.css": "/movie-Flix/static/css/main.edec381d.chunk.css",
-  "main.js": "/movie-Flix/static/js/main.e3a14dee.chunk.js",
-  "main.js.map": "/movie-Flix/static/js/main.e3a14dee.chunk.js.map",
+  "main.css": "/movie-Flix/static/css/main.68d13196.chunk.css",
+  "main.js": "/movie-Flix/static/js/main.397821e5.chunk.js",
+  "main.js.map": "/movie-Flix/static/js/main.397821e5.chunk.js.map",
   "runtime~main.js": "/movie-Flix/static/js/runtime~main.7540e249.js",
   "runtime~main.js.map": "/movie-Flix/static/js/runtime~main.7540e249.js.map",
   "static/js/2.b84d94b5.chunk.js": "/movie-Flix/static/js/2.b84d94b5.chunk.js",
   "static/js/2.b84d94b5.chunk.js.map": "/movie-Flix/static/js/2.b84d94b5.chunk.js.map",
   "index.html": "/movie-Flix/index.html",
-  "precache-manifest.6b84492d581912f1feb08790b2949e7a.js": "/movie-Flix/precache-manifest.6b84492d581912f1feb08790b2949e7a.js",
+  "precache-manifest.d8eff39c3db4d73cf55290680739c357.js": "/movie-Flix/precache-manifest.d8eff39c3db4d73cf55290680739c357.js",
   "service-worker.js": "/movie-Flix/service-worker.js",
-  "static/css/main.edec381d.chunk.css.map": "/movie-Flix/static/css/main.edec381d.chunk.css.map"
+  "static/css/main.68d13196.chunk.css.map": "/movie-Flix/static/css/main.68d13196.chunk.css.map"
 }
